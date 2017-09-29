@@ -13,6 +13,10 @@ List makeEmpty(List L){
 }
 void deleteList(List L){}
 */
+/*
+    Init an empty list with a head node.
+*/
+
 List initList(){
     List L;
     L = malloc(sizeof(struct Node));
@@ -32,6 +36,9 @@ void insertToEnd(List L, ElementType e){
     insert(L,p,e);
 }
 
+/*
+    Insert an element to the specific position.
+*/
 void insert(List l, Position p, ElementType e){
     Position tmpCell;
     tmpCell = malloc(sizeof(struct Node));
@@ -40,6 +47,10 @@ void insert(List l, Position p, ElementType e){
     p->next = tmpCell;
 }
 
+/*
+    Print elements one by one.
+    If the list is empty, we'll note that.
+*/
 void print(List L){
     Position p;
     if(L->next == NULL){
