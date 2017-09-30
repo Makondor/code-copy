@@ -17,6 +17,19 @@ void deleteList(List L){}
     Init an empty list with a head node.
 */
 
+/*
+    Find previous node of the specific location.
+*/
+Position findPreviois(List L, ElementType E){
+
+}
+/*
+    Delete the first element we found in the list.
+*/
+ElementType delete(List L, ElementType E){
+
+}
+
 List initList(){
     List L;
     L = malloc(sizeof(struct Node));
