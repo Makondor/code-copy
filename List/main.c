@@ -15,5 +15,6 @@ int main()
     printf("\n");
     // ======= Print ======
     print(l);
+    printf("\n");
     return 0;
 }
