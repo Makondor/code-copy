@@ -13,5 +13,5 @@ void print(List);
 void makeEmpty(List);
 void insert(List, Position, ElementType);
 void insertToEnd(List, ElementType);
-void delete(List,Position);
+//void delete(List,Position);
 

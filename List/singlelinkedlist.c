@@ -57,9 +57,8 @@ Position findPreviois(List L, ElementType E){
 /*
     Delete the first element we found in the list.
 */
-ElementType delete(List L, ElementType E){
-
-}
+//ElementType delete(List L, ElementType E){
+//}
 
 List initList(){
     List L;
