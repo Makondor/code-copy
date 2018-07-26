@@ -2,16 +2,40 @@
 
 void main(){
 
-    int insertData[] = {25763, 10819, 14991, 11960, 3313, 17838, 25641, 30708, 2789, 4222, 2488, 20131, 21245, 1929, 22805, 8165, 9879, 12346, 28164, 5962, 17737, 29982, 10357, 26249, 24288, 31180, 32667, 27893, 5797, 29189, 21249, 1208, 5305, 22003, 5239, 12126, 31044, 3182, 25337, 8215, 26035, 31641, 15625, 20979, 21248, 19153, 481, 5658, 8682, 11737, 21905, 27008, 1143, 18345, 22143, 25511, 5626, 5940, 10200, 12945, 9309, 12975, 9646, 5464, 1752, 9828, 6506, 17430, 19185, 20969, 20791, 13981, 15972, 26222, 2142, 1026, 23701, 28141, 16700, 9661, 19786, 24819, 17910, 22838, 10769, 2785, 3794, 19128, 19379, 31282, 10941, 3566, 21896, 3713, 4972, 27075, 22777, 28153, 5356, 27875};
+    int insertData[] = {6, 2, 8, 4, 1, 3};
 
     SearchTree T = NULL;
 
+    T = makeEmpty(T);
     int i;
-    for(i=0;i<100;i++){
+    for(i=0;i<6;i++){
         T = insert(insertData[i],T);
     }
+
+    //Testing taverse and findMin
+    midTravers(T);
+    SearchTree t = findMin(T);
+    printf("Minist data: %d\n", t->element);
+
+    printf("\n");
+    printf("========== Graphs ==========\n");
+    printf("digraph{\n");
+    graphTravers(T);
+    printf("}\n");
+    printf("========== Graphs end ==========\n");
+
+    // Testing delete
+    int forDelete = insertData[3];
+    printf("Deleting data: %d\n", forDelete);
+    tdelete(forDelete, T);
     midTravers(T);
     printf("\n");
+    printf("========== Graphs ==========\n");
+    printf("digraph{\n");
+    graphTravers(T);
+    printf("}\n");
+    printf("========== Graphs end ==========\n");
+
+
 
 }
-
