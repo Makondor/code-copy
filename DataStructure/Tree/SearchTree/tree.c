@@ -25,12 +25,14 @@ SearchTree insert(ElementType x, SearchTree T){
     }else if(x > T->element){
         T->right = insert(x, T->right);
     }
+
+    return T;
 }
 
 SearchTree midTravers(SearchTree T){
 
     if(T == NULL){
-        return NULL;
+        return T;
     }else{
         T->left = midTravers(T->left);
         printf("%d ", T->element);
@@ -41,7 +43,7 @@ SearchTree midTravers(SearchTree T){
 SearchTree graphTravers(SearchTree T){
 
     if(T == NULL){
-        return NULL;
+        return T;
     }else{
         T->left = graphTravers(T->left);
         // Generate graph.

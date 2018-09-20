@@ -1,6 +1,6 @@
 #include "tree.h"
 
-void main(){
+int main(){
 
     int insertData[] = {6, 2, 8, 4, 1, 3};
 
@@ -14,6 +14,7 @@ void main(){
 
     //Testing taverse and findMin
     midTravers(T);
+    printf("\n");
     SearchTree t = findMin(T);
     printf("Minist data: %d\n", t->element);
 
@@ -35,7 +36,5 @@ void main(){
     graphTravers(T);
     printf("}\n");
     printf("========== Graphs end ==========\n");
-
-
-
+    return 0;
 }
