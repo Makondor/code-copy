@@ -3,8 +3,8 @@
 For the implementation of tree ADT.
 
 
-* SimpleTree
+* `SimpleTree` 
 A simple tree built by input.
 
-* SearchTree
+* `SearchTree`
 Sorted seaarch tree.
