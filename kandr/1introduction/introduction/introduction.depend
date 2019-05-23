@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1557382309 source:d:\learning\kandr\1introduction\introduction\main.c
+	"introduction.h"
+
+1557380222 d:\learning\kandr\1introduction\introduction\introduction.h
+	<stdio.h>
+	<stdlib.h>
+
+1557379576 source:d:\learning\kandr\1introduction\introduction\print_hello.c
+	"introduction.h"
+
