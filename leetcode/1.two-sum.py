@@ -45,4 +45,7 @@ class Solution(object):
                 break
         return result
 
-       
+if __name__ == "__main__":
+    solution = Solution()
+    result = solution.twoSum([2,7,11,15], 9) 
+    print(result)     
