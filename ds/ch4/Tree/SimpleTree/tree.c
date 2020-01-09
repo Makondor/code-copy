@@ -1,5 +1,6 @@
 #include "tree.h"
 
+/*
 tree* insert(int data, tree *t){
     if (t == NULL){
 
@@ -7,6 +8,7 @@ tree* insert(int data, tree *t){
 
     }
 }
+*/
 
 
 void read_from_file(char *path){
@@ -21,4 +23,13 @@ void read_from_file(char *path){
         printf("%c", ch);
 
     fclose(fp);
+}
+
+/**
+ * Build a tree from data in a list which
+ * is storaed in a text file.
+ */
+
+void build_tree(char *l, Tree *t){
+
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define ElementType int
 
@@ -15,7 +16,7 @@ List initList();
 void printList(List);
 void makeEmpty(List);
 void insert(List, Position, ElementType);
-void insertToEnd(List, ElementType);
+void append(List, ElementType);
 /*
 void delete(List,Position);
 */

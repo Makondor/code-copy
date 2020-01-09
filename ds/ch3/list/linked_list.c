@@ -1,5 +1,5 @@
 #include "linked_list.h"
-
+/*
 List makeEmpty(List L){
     if(L!=NULL){
         deleteList(L);
@@ -11,6 +11,7 @@ List makeEmpty(List L){
     L->next = NULL;
     return L;
 }
+*/
 
 //void deleteList(List L){}
 
@@ -27,6 +28,7 @@ Position findPreviois(List L, ElementType E){
 /**
  * Delete the first element we found in the list.
 */
+
 //ElementType delete(List L, ElementType E){
 //}
 
@@ -37,12 +39,12 @@ List initList(){
     L->next = NULL;
     return L;
 }
+
 /*
     Insert data to the end of list.
 */
-void insertToEnd(List L, ElementType e){
-    Position p;
-    p = (L->next == NULL)? L:L->next;
+void append(List L, ElementType e){
+    Position p = L;
     while(p->next != NULL){
         p = p->next;
     }
@@ -65,15 +67,16 @@ void insert(List l, Position p, ElementType e){
     If the list is empty, we'll note that.
 */
 void printList(List L){
-    Position p;
-    if(L->next == NULL){
+    if(L == NULL){
         printf("List is empty.\n");
         return;
     }
-    p = L->next;
-    printf("LinkedList as: ");
+    Position p = L;;
+
+    printf("LinkedList as:\n");
     while(p != NULL){
         printf("%d ", p->data);
         p = p->next;
     }
+    printf("\n");
 }
